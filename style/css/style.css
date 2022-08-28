@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Courgette", cursive;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #eee;
+  gap: 30px;
+}
+body .drop {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5em;
+  text-shadow: -2px -2px 5px #fff;
+  -webkit-filter: drop-shadow(4px 4px 10px #fff);
+          filter: drop-shadow(4px 4px 10px #fff);
+  -webkit-box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05), 15px 25px 10px rgba(0, 0, 0, 0.05), 15px 20px 20px rgba(0, 0, 0, 0.05), inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+          box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05), 15px 25px 10px rgba(0, 0, 0, 0.05), 15px 20px 20px rgba(0, 0, 0, 0.05), inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+}
+body .drop::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+body .drop::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+body .drop ion-icon {
+  color: #ff5353;
+  font-size: 2em;
+  margin-top: 20px;
+}
+body span {
+  font-size: 3em;
+  color: #333;
+}
